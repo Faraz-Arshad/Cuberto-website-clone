@@ -1,0 +1,237 @@
+@ -0,0 +1,236 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: "Averta Demo";
+    box-sizing: border-box;
+}
+
+#homemain .headings h1:hover{
+    color: #000
+}
+
+* ::selection {
+    color: #fff;
+    background-color: #000;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    width: 100%;
+    background-color: #fff;
+}
+
+#home {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 30px 50px;
+
+}
+
+#nav img {
+    width: 100px;
+}
+
+#nav #right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+#nav #right a {
+    font-size: 1.2vw;
+    font-weight: 400;
+    letter-spacing: 0px;
+    text-decoration: none;
+    color: #000;
+}
+
+#nav i {
+    margin-top: 3px;
+    font-size: 20px;
+}
+
+#homemain {
+    width: 100%;
+    padding: 11vw 14vw;
+}
+
+#homemain h1 {
+    font-weight: 500;
+    font-size: 1.5vw;
+    letter-spacing: -0.1vw;
+}
+
+.headings {
+    display: flex;
+    gap: 40px;
+}
+
+#homemain .headings h1 {
+    color: transparent;
+    -webkit-text-stroke: 1px #000;
+    font-size: 7.5vw;
+    line-height: 1;
+    letter-spacing: -5px;
+}
+
+#homelast {
+    padding: 5vw 15vw;
+}
+
+#homelast p{
+    width: 70%;
+    font-size: 2vw;
+    font-weight: 400;
+    letter-spacing: -0.08vw;
+}
+
+#featured {
+    padding: 10vw 15vw;
+}
+
+.fheading>h1 {
+    line-height: 1;
+    font-size: 4vw;
+    font-weight: 400;
+}
+
+.fheading>h1:nth-child(2) {
+    color: transparent;
+    -webkit-text-stroke: 1px #000;
+}
+
+#fimages {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5vw;
+    height: 100vh;
+}
+
+#fleft {
+    overflow: hidden;
+    width: 45%;
+    height: inherit;
+}
+
+.fleftelm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: inherit;
+}
+
+.fleftelm h1 {
+    font-size: 2.5vw;
+    line-height: 1;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin: 1.5vw 0vw;
+}
+
+.fleftelm h3 {
+    font-size: 1.3vw;
+    font-weight: 400;
+}
+
+.fleftelm h4 {
+    opacity: 0.5;
+}
+
+#fright {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 45%;
+    height: inherit;
+}
+
+#fright .images {
+    width: 90%;
+    height: 90%;
+    background-color: red;
+}
+
+.btndiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btndiv button{
+    padding: 1.3vw 2.5vw;
+    border-radius: 100px;
+    border: 1px solid #9e9e9e;
+    background-color: #fff;
+    font-size: 1vw;
+    font-weight: 900;
+}
+
+#dev {
+    width: 100%;
+    padding: 5vw 15vw;
+}
+
+#dev h1{
+    font-size: 3.8vw;
+    font-weight: 400;
+    width: 60%;
+    line-height: 1;
+}
+
+#dev p {
+    font-size: 1.5vw;
+    margin-top: 3vw;
+    width: 60%;
+    letter-spacing: -0.5px;
+}
+
+#slides {
+    padding: 3vw 7vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slide {
+    width: 31%;
+}
+
+.slide .img {
+    width: 100%;
+    height: 15rem;
+    background-color: yellow;
+}
+
+.slide .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.slide .tag {
+    width: fit-content;
+    border-radius: 100px;
+    padding: 10px 20px;
+    background-color: #f7f7f7;
+    margin: 20px 0px;
+}
+
+.slide h3 {
+    font-size: 1.4vw;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+}
