@@ -1,8 +1,7 @@
-@ -0,0 +1,236 @@
 * {
     margin: 0%;
     padding: 0%;
-    font-family: "Averta Demo";
+    font-family: "roboto";
     box-sizing: border-box;
 }
 
@@ -212,13 +211,14 @@ html,body {
 
 .slide .img {
     width: 100%;
-    height: 15rem;
+    height: 16vw;
     background-color: yellow;
 }
 
 .slide .img img {
     height: 100%;
     width: 100%;
+    border-radius: 7px;
     object-fit: cover;
 }
 
