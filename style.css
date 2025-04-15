@@ -1,10 +1,21 @@
-@ -0,0 +1,236 @@
+/* @ -0,0 +1,236 @@ */
+@font-face {
+    font-family: "Impact";
+    src: url(Impact.TTF);
+}
+
+@font-face {
+    font-family: "Averta";
+    src: url(Averta-Regular.otf);
+}
+
 * {
     margin: 0%;
     padding: 0%;
-    font-family: "Averta Demo";
+    font-family: "Averta";
     box-sizing: border-box;
 }
+
 
 #homemain .headings h1:hover{
     color: #000
@@ -17,7 +28,7 @@
 
 html,body {
     height: 100%;
-    width: 100%;
+    width: 100vw;
 }
 
 #main {
@@ -65,13 +76,16 @@ html,body {
 
 #homemain {
     width: 100%;
-    padding: 11vw 14vw;
+    padding: 11vw 11vw;
 }
 
 #homemain h1 {
-    font-weight: 500;
-    font-size: 1.5vw;
+    font-weight: 300;
+    font-size: 1.7vw;
     letter-spacing: -0.1vw;
+}
+.hvr {
+    font-family: "Averta-Bold";
 }
 
 .headings {
