@@ -44,8 +44,8 @@ html,body {
 }
 
 #cursor {
-    width: 12vw;
-    height: 12vw;
+    width: 14vw;
+    height: 14vw;
     border-radius: 50%;
     background-color: transparent; 
     position: fixed;
@@ -99,7 +99,7 @@ html,body {
 
 #homemain {
     width: 100%;
-    padding: 11vw 11vw;
+    padding: 14.5vw 13.5vw;
 }
 
 #homemain h1 {
@@ -119,7 +119,8 @@ html,body {
 #homemain .headings h1 {
     color: transparent;
     -webkit-text-stroke: 1px #000;
-    font-size: 7.5vw;
+    font-size: 7vw;
+    font-weight: 900;
     line-height: 1;
     letter-spacing: -5px;
 }
@@ -200,10 +201,18 @@ html,body {
 #fright .images {
     width: 90%;
     height: 90%;
+    object-fit: cover;
     background-color: red;
 }
 
+#fright .images img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 .btndiv {
+    margin-top: 1.5vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -212,7 +221,7 @@ html,body {
 .btndiv button{
     padding: 1.3vw 2.5vw;
     border-radius: 100px;
-    border: 1px solid #9e9e9e;
+    border: 1px solid #999999;
     background-color: #fff;
     font-size: 1vw;
     font-weight: 900;
@@ -256,7 +265,7 @@ html,body {
 .slide .img img {
     height: 100%;
     width: 100%;
-    border-radius: 7px;
+    border-radius: 5px;
     object-fit: cover;
 }
 
@@ -264,7 +273,7 @@ html,body {
     width: fit-content;
     border-radius: 100px;
     padding: 10px 20px;
-    background-color: #f7f7f7;
+    background-color: #e4e4e4;
     margin: 20px 0px;
 }
 
@@ -272,4 +281,49 @@ html,body {
     font-size: 1.4vw;
     font-weight: 400;
     letter-spacing: -0.5px;
+}
+
+#new {
+    padding: 13vw 14vw;
+}
+
+#new h1 {
+    font-size: 4.5vw;
+    font-weight: 270;
+    letter-spacing: -.25vw;
+    line-height: 1;
+}
+
+#sections {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8vw;
+}
+
+#sections img {
+    background-color: yellow;
+    object-fit: cover;
+    width: 20vw;
+    height: 20vw;
+}
+
+.section {
+    margin-right: 3vw;
+}
+
+.section i {
+    font-size: 1.2vw;
+}
+
+.section #idiv {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 1.5vw;
+    margin-bottom: .8vw;
+}
+
+.section h3{
+    width: 70%;
+    font-weight: 400;
 }

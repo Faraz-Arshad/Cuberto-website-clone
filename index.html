@@ -7,11 +7,9 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
         </style>
-    <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
-    rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
     <link href="https://db.onlinewebfonts.com/c/c36a75c5ada59665e225bbf5e38efd34?family=Averta-Bold" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.css" />
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" /> 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -50,33 +48,35 @@
         </div>
         <div id="fimages">
             <div id="fleft">
-               <div class="fleftelm">
+               <div class="fleftelm start">
                 <h3>Riyadh</h3>
                 <h1>official website of riyadh, saudi arabia's capital</h1>
                 <h4>design, development, product</h4>
                </div>
                <div class="fleftelm">
-                <h3>Riyadh</h3>
-                <h1>official website of riyadh, saudi arabia's capital</h1>
-                <h4>design, development, product</h4>
+                <h3>Ferrumpipe</h3>
+                <h1>Galvanized steel metal frame manufacturer</h1>
+                <h4>branding, design, development, product</h4>
                </div>
                <div class="fleftelm">
-                <h3>Riyadh</h3>
-                <h1>official website of riyadh, saudi arabia's capital</h1>
-                <h4>design, development, product</h4>
+                <h3>FlipaClip</h3>
+                <h1>The best tool for frame-by-frame generation</h1>
+                <h4>web, development, product</h4>
                </div>
-               <div class="fleftelm">
-                <h3>Riyadh</h3>
-                <h1>official website of riyadh, saudi arabia's capital</h1>
-                <h4>design, development, product</h4>
+               <div class="fleftelm last">
+                <h3>uLesson</h3>
+                <h1>Online platform for distance learning</h1>
+                <h4>web, mobile, product</h4>
                </div>
+               
+            
             </div>
             <div id="fright">
                 <div class="images">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
+                    <img src="https://cuberto.com/assets/projects/riyadh/cover.jpg" alt="">
+                    <img src="https://cuberto.com/assets/projects/ferrumpipe/cover.jpg" alt="">
+                    <img src="https://flipaclip.com/assets/img/ready/1080/1.webp" alt="">
+                    <img src="https://cuberto.com/assets/projects/ulesson/cover.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -116,13 +116,45 @@
     <div class="btndiv">
         <button>View all resources</button>
     </div>
+    <div id="new">
+        <h1>New day -</h1>
+        <h1>new inspiro</h1>
+        <div id="sections">
+            <div class="section">
+                <img src="https://cdn.cuberto.com/cb/upload/b73b0d2feb001c8bd719c808c40ce28b.png" alt="">
+                <div id="idiv"><i class="ri-instagram-line"></i><h2>cubertodesign</h2></div>
+                <h3>In collaboration with vogel, who helps us with illustrations,working on the redesign of</h3>
+            </div>
+            <div class="section">
+                <img src="" alt="">
+                <div id="idiv"><i class="ri-dribbble-line"></i><h2>cuberto</h2></div>
+                <h3>PuntoPago mobile version</h3>
+            </div>
+            <div class="section">
+                <img src="" alt="">
+                <div id="idiv"><i class="ri-instagram-line"></i><h2>cubertodesign</h2></div>
+                <h3>We've prepared a detailed casestudy of Zelt project</h3>
+            </div>
+            <div class="section">
+                <img src="" alt="">
+                <div id="idiv"><i class="ri-dribbble-line"></i><h2>cuberto</h2></div>
+                <h3>Nursececlub Site redesign</h3>
+            </div>
+        </div>
+    </div>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/three.min.js" integrity="sha512-vnmn/Qqn6aG0POAc9mIGzjq0IybrvxJXYDafNvp9JSnDGxeF3pbkSqLvf+YGd5ku63pT7sa/jxHn7/d0mU8+tA=="
- crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script type="module" src="three.tsl.js"></script>
+<!--  Gsap is needed for Basic Effects -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+<!-- Scroll Trigger is needed for Scroll Effects -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<!-- Three.js is needed for 3d Effects -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.174.0/three.tsl.js" integrity="sha512-kLVG+9hRPzp61ceEI5/hoRsQmEV9cFf4r4DOCYIBPteqgaTB6awXLAZlWUO5Dvlisok4doFjnxs75mngpXI35w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- ControlKit is needed for Debug Panel
+<script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script> -->
+<script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script> <!-- Shery js -->
 <script src="script.js"></script>
 
 </body>
