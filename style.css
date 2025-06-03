@@ -198,18 +198,46 @@ html,body {
     height: inherit;
 }
 
+/* Add this to your existing CSS (AI) */
+
 #fright .images {
+    position: relative;
     width: 90%;
     height: 90%;
-    object-fit: cover;
-    background-color: red;
+    overflow: hidden;
 }
 
 #fright .images img {
+    position: absolute;
+    top: 0;
+    left: 0;
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius: 8px;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 0.6s ease;
 }
+
+/* Show only the first image initially */
+#fright .images img:first-child {
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+/* Class to show active image */
+#fright .images img.active {
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+/* Class to hide previous image */
+#fright .images img.prev {
+    opacity: 0;
+    transform: translateY(-100%);
+}
+/* End AI */
 
 .btndiv {
     margin-top: 1.5vw;

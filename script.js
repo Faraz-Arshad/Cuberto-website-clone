@@ -52,32 +52,64 @@ function homeVideo (){
 homeVideo()
 
 
-gsap.to (".fleftelm", {
+// Replace your existing ScrollTrigger code with this updated version
+
+gsap.to(".fleftelm", {
     scrollTrigger: {
         trigger: "#fimages",
         pin: true,
-        start: ".start top",
+        start: "top top",
         end: "bottom bottom",
         endTrigger: ".last",
         scrub: 1,
+        onUpdate: function(self) {
+            // Calculate which image should be active based on scroll progress
+            const progress = self.progress;
+            const totalImages = 4; // You have 4 images
+            const activeIndex = Math.floor(progress * totalImages);
+            
+            // Update images
+            updateActiveImage(activeIndex);
+        }
     },
     y: "-300%",
-    ease: Power1
-})
+    ease: "none" // Changed from Power1 to "none" for smoother scrub
+});
 
+// Function to update active image
+function updateActiveImage(activeIndex) {
+    const images = document.querySelectorAll('#fright .images img');
+    
+    images.forEach((img, index) => {
+        img.classList.remove('active', 'prev');
+        
+        if (index === activeIndex) {
+            img.classList.add('active');
+        } else if (index < activeIndex) {
+            img.classList.add('prev');
+        }
+    });
+}
+
+// Initialize first image as active
+document.addEventListener('DOMContentLoaded', function() {
+    updateActiveImage(0);
+});
+
+// Your existing Shery.js code (keeping it for additional effects if needed)
 let sections = document.querySelectorAll(".fleftelm");
 Shery.imageEffect(".images", {
     style: 5,
     slideStyle: (setScroll) => {
-       sections.forEach(function(section, index){
-        ScrollTrigger.create({
-            trigger: section,
-            start: "top top",
-            scrub: 1,
-            onUpdate: function(prog){
-               setScroll(prog.progress+index)
-            }
-        })
-       })
+        sections.forEach(function(section, index) {
+            ScrollTrigger.create({
+                trigger: section,
+                start: "top top",
+                scrub: 1,
+                onUpdate: function(prog) {
+                    setScroll(prog.progress + index);
+                }
+            });
+        });
     },
-  }); 
+});
