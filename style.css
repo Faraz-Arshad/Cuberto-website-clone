@@ -11,8 +11,8 @@
 }
 
 * {
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     font-family: "Averta";
     box-sizing: border-box;
 }
@@ -29,7 +29,7 @@
 
 html,body {
     height: 100%;
-    width: 100vw;
+    width: 100%;
 }
 
 #main {
@@ -44,8 +44,8 @@ html,body {
 }
 
 #cursor {
-    width: 14vw;
-    height: 14vw;
+    width: 18vw;
+    height: 18vw;
     border-radius: 50%;
     background-color: transparent; 
     position: fixed;
@@ -70,7 +70,7 @@ html,body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 30px 50px;
+    padding: 2vw 3vw;
 
 }
 
@@ -99,7 +99,7 @@ html,body {
 
 #homemain {
     width: 100%;
-    padding: 14.5vw 13.5vw;
+    padding: 10vw 13vw;
 }
 
 #homemain h1 {
@@ -354,4 +354,76 @@ html,body {
 .section h3{
     width: 70%;
     font-weight: 400;
+}
+
+#footer {
+    width: 100vw;
+    height: 80vh;
+    background-color: black;
+    color: white;
+    padding: 4vw 6.5vw;
+}
+
+#footer h1{
+    font-size: 4.5vw; 
+    font-weight: 400;
+    border-bottom: 1px solid white;
+    
+}
+
+#social {
+    margin-top: 5vh;
+    /* background-color: red; */
+}
+
+#social .socials{
+    margin-top: 1.5vh;
+    /* background-color: red; */
+}
+
+#footer .socials {
+    display: flex;
+    align-items: center;
+    gap: .5vw;
+    margin: 2vh;
+}
+
+#social .socials h2{
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+
+#address {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+    width: 100%;
+    margin-top: 10vh;
+    padding-top: 1.4vw;
+    border-top: 1px solid white;
+}
+
+#addr1 {
+    /* background-color: green; */
+}
+
+#addr1 h5{
+    font-size: 1.4vw;
+    font-weight: 100;
+}
+
+#addr1 h4 {
+    font-size: 1.7vw;
+    font-weight: 500;
+}
+
+
+#addr2 h5 {
+    font-size: 1.4vw;
+    font-weight: 100;
+}
+
+#addr2 h4 {
+    font-size: 1.7vw;
+    font-weight: 500;
 }
