@@ -403,10 +403,6 @@ html,body {
     border-top: 1px solid white;
 }
 
-#addr1 {
-    /* background-color: green; */
-}
-
 #addr1 h5{
     font-size: 1.4vw;
     font-weight: 100;
@@ -416,7 +412,6 @@ html,body {
     font-size: 1.7vw;
     font-weight: 500;
 }
-
 
 #addr2 h5 {
     font-size: 1.4vw;
