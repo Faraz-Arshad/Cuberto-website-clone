@@ -287,7 +287,6 @@ html,body {
 .slide .img {
     width: 100%;
     height: 16vw;
-    background-color: yellow;
 }
 
 .slide .img img {
@@ -329,7 +328,6 @@ html,body {
 }
 
 #sections img {
-    background-color: yellow;
     object-fit: cover;
     width: 20vw;
     height: 20vw;
@@ -373,12 +371,10 @@ html,body {
 
 #social {
     margin-top: 5vh;
-    /* background-color: red; */
 }
 
 #social .socials{
     margin-top: 1.5vh;
-    /* background-color: red; */
 }
 
 #footer .socials {
@@ -396,7 +392,6 @@ html,body {
 #address {
     display: flex;
     justify-content: space-between;
-    /* background-color: red; */
     width: 100%;
     margin-top: 10vh;
     padding-top: 1.4vw;
@@ -405,20 +400,20 @@ html,body {
 
 #addr1 h5{
     font-size: 1.4vw;
-    font-weight: 100;
+    font-weight: 50;
 }
 
 #addr1 h4 {
     font-size: 1.7vw;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 #addr2 h5 {
     font-size: 1.4vw;
-    font-weight: 100;
+    font-weight: 50;
 }
 
 #addr2 h4 {
     font-size: 1.7vw;
-    font-weight: 500;
+    font-weight: 700;
 }
